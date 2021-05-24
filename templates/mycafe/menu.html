@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="device-width",initial-scale='1'>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style type="text/css">
+	<style type="text/css">
+		#p1{
+			padding:100px;
+		}
+		#s1{
+			margin:0px;
+			text-align: center;
+			float: left;
+			margin:70px; 
+		}
+		#s2{
+			margin:70px;
+			text-align: justify;
+			float: left;
+		}
+		#s3{
+			margin:70px;
+			text-align:justify ;
+			float: left;
+		}
+		li a {margin-left:80px;}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm bg-light fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="home"><span style="font-family:'Brush Script MT' , cursive; font-size: 40px;">MyCafe</span></a>
+		<div class="collapse navbar-collapse" id="Navbar">
+		<ul class="navbar nav mr-auto">
+			<li class="nav-item" style="display: inline-block;"><a href="reservations" class="nav-link">Reservation</a> </li>
+			<li class="nav-item"style="display: inline-block; "><a class="nav-link" active>Menu</a> </li>
+			<li class="nav-item" style="display: inline-block; "><a href="aboutus" class="nav-link" >About</a> </li>
+			<li class="nav-item" style="display: inline-block;"><a href="contact" class="nav-link">Contact</a> </li>
+			<li class="nav-item" style="display: inline-block;"><a href="orer" class="nav-link">Order Online</a> </li>
+		</ul>
+		</div>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		</div>
+	</nav><br><br><br><br>
+	<div id="p1">
+		<div id="s1">
+			<h3 style="font-weight: bolder;">__ Our menu __</h3><br>
+			<h6 style="font-weight: bold;">GOODNESS & TASTE<br><br>
+			Sumptous delicious<br>
+			food baked in open <br>
+		    oven swith spices<br></h6>
+		<br><br>
+		 <button class="btn btn-medium btn-info">See The Menu</button><br><br>
+		 <img src="{% static 'images/dish-5.png' %}" width="300px">
+		</div>
+		<div id="s2">
+			Chicken Schnitzel.............$ 6.50<br><br>
+			Chicken Breast , Special Bread<br>
+			crumbs , chips or mashed <br>
+			potatoes , aloli sauce<br><br>
+			Chicken Schnitzel.............$ 6.50<br><br>
+			Chicken Breast , Special Bread<br>
+			crumbs , chips or mashed <br>
+			potatoes , aloli sauce<br><br>
+			Chicken Schnitzel.............$ 6.50<br><br>
+			Chicken Breast , Special Bread<br>
+			crumbs , chips or mashed <br>
+			potatoes , aloli sauce<br><br>
+
+		</div>
+		<div id="s3">
+			Chicken Schnitzel.............$ 6.50<br><br>
+			Chicken Breast , Special Bread<br>
+			crumbs , chips or mashed <br>
+			potatoes , aloli sauce<br><br>
+			Chicken Schnitzel.............$ 6.50<br><br>
+			Chicken Breast , Special Bread<br>
+			crumbs , chips or mashed <br>
+			potatoes , aloli sauce<br><br>
+			Chicken Schnitzel.............$ 6.50<br><br>
+			Chicken Breast , Special Bread<br>
+			crumbs , chips or mashed <br>
+			potatoes , aloli sauce<br><br>
+			
+		</div>
+	</div>
+	
+</body>
+</html>

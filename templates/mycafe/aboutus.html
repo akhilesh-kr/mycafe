@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="device-width",initial-scale='1'>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style type="text/css">
+	li a {margin-left:80px;}
+		
+	#p1{
+		height: 550px;
+		width:1100px;
+		margin-top: 100px;
+	}
+	#s1{
+		height: 550px;
+		width:280px;
+		float: left;
+	}
+	#s2{
+		height: 550px;
+		width:500px;
+		float: left;
+		border-style: solid;
+		border-color:;
+		border-width: 5px;
+		text-align: center;
+		box-shadow: 10px 10px 10px;
+
+	}
+	#s3{
+		height: 550px;
+		width:280px;
+		float: left;
+	}
+
+</style>
+</head>
+<body>
+	<div class="container">
+	<nav class="navbar navbar-expand-sm bg-light fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="home"><span style="font-family:'Brush Script MT' , cursive; font-size: 40px;">MyCafe</span></a>
+		<div class="collapse navbar-collapse" id="Navbar">
+		<ul class="navbar nav mr-auto">
+			<li class="nav-item" style="display: inline-block;"><a href="reservations" class="nav-link">Reservation</a> </li>
+			<li class="nav-item"style="display: inline-block; "><a href="menu" class="nav-link">Menu</a> </li>
+			<li class="nav-item" style="display: inline-block; "><a  class="nav-link" active>About</a> </li>
+			<li class="nav-item" style="display: inline-block;"><a href="contact" class="nav-link">Contact</a> </li>
+			<li class="nav-item" style="display: inline-block;"><a href="orer" class="nav-link">Order Online</a> </li>
+		</ul>
+		</div>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		</div>
+	</nav>
+
+	<div id="p1">
+		<div id="s1">
+			<img src="{% static 'images/gallery-1.jpg' %}" class="img-fluid rounded-circle float-left" height="250px" width="250px">
+			<img src="{% static 'images/gallery-4.jpg' %}" class="img-fluid rounded-circle float-left" height="250px" width="250px" style="margin-top: 50px;">
+		</div>
+		<div id="s2"><br><br>
+			<center><h1><span style="font-family: 'Brush Script MT' , cursive";>Our story</span></h1><br><h3><b>LOVE FOR FOOD</b></h3><br></center>
+			<h5 style="font-family: 'Courier New' ,monospace; ">Welcome, This is MyCafe . MyCafe has been created by a team that is extremely passionate about food , wine and all things fine . As a collective group of chefs and hoteliers who have worked in some of the best hostels and restaurants around the world , we were always lookout for new dining experiences and exciting cuisines . It is this love and passion for eating and exploring that boughtus together to create <b>MyCafe</b></h5>
+		</div>
+		<div id="s3">
+			<img src="{% static 'images/gallery-3.jpg' %}" class="img-fluid rounded-circle float-right" height="250px" width="250px">
+			<img src="{% static 'images/gallery-2.jpg' %}" class="img-fluid rounded-circle float-right" height="250px" width="250px" style="margin-top: 50px;">
+		</div>
+	</div>
+	<footer style="text-align: center;
+		background-color: black;
+		margin-top:50px;
+		margin-bottom: 50px; 
+		color: white;">
+		    <h1>MyCafe</h1><br>
+			<address>126 , Andhiyari Bagh (south) , Gorakhpur</address>
+			<span style="color: yellow;">RESERVATION NUMBER:</span> +0551 2336780<br>
+			<span style="color: yellow;">WORKING HOURS</span><br>
+			MON-FRI: 08:00AM - 10:00PM<br>
+			SAT-SUN: 10:00AM - 11:00PM
+	</footer>
+
+</div>
+</body>
+</html>
